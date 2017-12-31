@@ -8,5 +8,21 @@
 
 import Foundation
 
-print("Hello, World!")
+class Solution {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        
+        var map = [Int: Int]()
+        var arr = [Int]()
+        for i in 0 ..< nums.count {
+            if let newK = map[nums[i]] {
+                arr.append(newK); arr.append(i)
+                return arr
+            } else {
+                map[target - nums[i]] =  i
+            }
+        }
+        return []
+        
+    }
+}
 
