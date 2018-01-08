@@ -18,23 +18,19 @@ return [0, 1].
  */
  
 class Solution {
-  func twoSum(_ nums: [Int], _ target: Int) -> [Int] {   
-  
- var map = [Int: Int]()
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        
+        var map = [Int: Int]()
 var arr = [Int]()
-
-  for i in 0 ..< nums.count {
-    if let newK = map[nums[i]] {
-        arr.append(newK); arr.append(i)
-        return arr
+  for index in 0 ..< nums.count {
+    if let newK = map[nums[index]] {
+        arr.append(contentsOf:[newK,index]);return arr
     } else {
-      map[target - nums[i]] =  i
+      map[target - nums[index]] = index
     }
   }
-  
   return []
     }
 }
-
 // This cost O(n) time
 ```
