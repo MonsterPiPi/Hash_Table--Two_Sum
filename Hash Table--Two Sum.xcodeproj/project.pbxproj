@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5604559200CFC160043E5A5 /* two_sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5604557200CFC160043E5A5 /* two_sum.cpp */; };
 		A5664E3A1FF8DF1A007C76B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664E391FF8DF1A007C76B5 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A5604556200CFC160043E5A5 /* Hash Table--Two Sum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hash Table--Two Sum-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5604557200CFC160043E5A5 /* two_sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = two_sum.cpp; sourceTree = "<group>"; };
+		A5604558200CFC160043E5A5 /* two_sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = two_sum.hpp; sourceTree = "<group>"; };
 		A5664E361FF8DF1A007C76B5 /* Hash Table--Two Sum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Hash Table--Two Sum"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5664E391FF8DF1A007C76B5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				A5664E391FF8DF1A007C76B5 /* main.swift */,
+				A5604557200CFC160043E5A5 /* two_sum.cpp */,
+				A5604558200CFC160043E5A5 /* two_sum.hpp */,
+				A5604556200CFC160043E5A5 /* Hash Table--Two Sum-Bridging-Header.h */,
 			);
 			path = "Hash Table--Two Sum";
 			sourceTree = "<group>";
@@ -94,6 +101,7 @@
 				TargetAttributes = {
 					A5664E351FF8DF1A007C76B5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5604559200CFC160043E5A5 /* two_sum.cpp in Sources */,
 				A5664E3A1FF8DF1A007C76B5 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,9 +245,13 @@
 		A5664E3E1FF8DF1A007C76B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6469XZ9B4P;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hash Table--Two Sum/Hash Table--Two Sum-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -246,9 +259,12 @@
 		A5664E3F1FF8DF1A007C76B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6469XZ9B4P;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hash Table--Two Sum/Hash Table--Two Sum-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
