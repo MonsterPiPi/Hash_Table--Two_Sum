@@ -34,3 +34,32 @@ var arr = [Int]()
 }
 // This cost O(n) time
 ```
+## C++
+```cpp
+/**
+- 1. Use number as the key in hash table, and hash table is the dictionary struct in Swift.
+- 2. The value in return dictionary is made up of original input array.
+- 3. If one number in return array is n, another number is target - n.
+ */
+ 
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+    map<int,int> namesp;
+    vector<int> arr;
+    for (int index = 0; index < arr.size() - 1; index++) {
+        if (namesp.find(nums[index]) != namesp.end()){
+            arr.insert(arr.end(), namesp[nums[index]]);
+            arr.insert(arr.end(), index);
+            return arr;
+        }else{
+            namesp[target - nums[index]] = index;
+        }
+    }
+    arr.clear();
+    return arr;    
+    }
+};
+// This cost O(n) time
+
+```
